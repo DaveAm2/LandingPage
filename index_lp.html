@@ -83,7 +83,7 @@
           </div>
           <div class="col-12 col-md-6 text-center">
             <img
-              src="/resources/foto_segundo_congreso_37.jpeg"
+              src="resources/foto_segundo_congreso_37.jpeg"
               class="img-fluid rounded shadow"
               alt="Ilustración del congreso de ingenierías"
             />
@@ -100,7 +100,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100">
               <img
-                src="/resources/colin.jpeg"
+                src="resources/colin.jpeg"
                 class="card-img-top"
                 alt="Portada conferencia 1"
               />
@@ -125,7 +125,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100">
               <img
-                src="/resources/coxca.jpeg"
+                src="resources/coxca.jpeg"
                 class="card-img-top"
                 alt="Portada conferencia 2"
               />
@@ -150,7 +150,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card h-100">
               <img
-                src="/resources/sanchez.jpeg"
+                src="resources/sanchez.jpeg"
                 class="card-img-top"
                 alt="Portada conferencia 3"
               />
@@ -309,7 +309,7 @@
           <div class="col">
             <div class="card h-100">
               <img
-                src="/resources/martinez.jpeg"
+                src="resources/martinez.jpeg"
                 class="card-img-top"
                 alt="Foto Ponente Hugo Martínez"
               />
@@ -328,7 +328,7 @@
           <div class="col">
             <div class="card h-100">
               <img
-                src="/resources/macias.jpeg"
+                src="resources/macias.jpeg"
                 class="card-img-top"
                 alt="Foto Ponente Ricardo Macías"
               />
@@ -346,7 +346,7 @@
           <div class="col">
             <div class="card h-100">
               <img
-                src="/resources/ferro.jpeg"
+                src="resources/ferro.jpeg"
                 class="card-img-top"
                 alt="Foto Ponente Rodolfo Ferro"
               />
@@ -365,7 +365,7 @@
           <div class="col">
             <div class="card h-100">
               <img
-                src="/resources/alvarez.jpeg"
+                src="resources/alvarez.jpeg"
                 class="card-img-top"
                 alt="Foto Ponente D"
               />
@@ -397,7 +397,7 @@
           <div class="carousel-inner rounded shadow">
             <div class="carousel-item active">
               <img
-                src="/resources/foto_segundo_congreso_24.jpeg"
+                src="resources/foto_segundo_congreso_24.jpeg"
                 class="d-block w-100"
                 alt="Foto 1 del congreso"
                 style="
@@ -410,7 +410,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_20.jpeg"
+                src="resources/foto_segundo_congreso_20.jpeg"
                 class="d-block w-100"
                 alt="Foto 2 del congreso"
                 style="
@@ -423,7 +423,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_13.jpeg"
+                src="resources/foto_segundo_congreso_13.jpeg"
                 class="d-block w-100"
                 alt="Foto 4 del congreso"
                 style="
@@ -436,7 +436,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_21.jpeg"
+                src="resources/foto_segundo_congreso_21.jpeg"
                 class="d-block w-100"
                 alt="Foto 5 del congreso"
                 style="
@@ -449,7 +449,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_23.jpeg"
+                src="resources/foto_segundo_congreso_23.jpeg"
                 class="d-block w-1D (Completo).docx: La Clínica MED necesita un sistema de escritorio (Python/Flet + Django/PostgreSQL) para gestionar su operación. **Requisitos Funcionales:** 1. **Administración:** Gestión de usuarios (Admin, Recepción, Médico, Enfermería), catálogos de servicios, precios y horarios médicos. Generación de reportes de ingresos y caja. 2. **Recepción:** Agenda multicalendario (filtrable por médico/especialidad), registro de pacientes (datos personales y de emergencia), gestión de citas (programada, confirmada, cancelada, etc.), reprogramación, lista de espera, y cobro en caja (efectivo, tarjeta) con emisión de recibos. 3. **Médico (ECE):** Acceso al Expediente Clínico Electrónico (ECE), consulta de historial, registro de notas de evolución/alta, visualización de alergias/crónicos, generación de recetas, órdenes de estudios y adjuntar documentos. 4. **Enfermería:** Registro de triage (signos vitales) y notas de enfermería, consulta de indicaciones médicas. **Requisitos No Funcionales:** * Interfaz intuitiva, arquitectura de escritorio local conectada a servidor central (red interna), seguridad por roles (login), y confidencialidad de datos. --- ### 2. Diccionario de Datos **Tabla: PACIENTE** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idPaciente** | ID único del Paciente | Entero | PK, Obligatorio | | nombre | Nombre(s) | Varchar(100) | Obligatorio | | apellidoPaterno | Apellido Paterno | Varchar(50) | Obligatorio | | apellidoMaterno | Apellido Materno | Varchar(50) | Opcional | | fechaNacimiento | Fecha de nacimiento | Date | Obligatorio | | genero | Sexo (Masculino, Femenino, Otro) | Varchar(15) | Opcional | | telefonoContacto | Teléfono principal | Varchar(15) | Obligatorio | | contactoEmergenciaNombre | Nombre de contacto de emergencia | Varchar(150) | Opcional | | contactoEmergenciaTelefono | Teléfono de contacto de emergencia | Varchar(15) | Opcional | | alergiasConocidas | Descripción de alergias | Text | Opcional | | padecimientosCronicos | Descripción de padecimientos crónicos | Text | Opcional | **Tabla: USUARIO** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idUsuario** | ID único del Usuario | Entero | PK, Obligatorio | | nombreUsuario | Alias para login | Varchar(30) | Obligatorio, Único | | contrasenaHash | Contraseña cifrada | Varchar(128) | Obligatorio | | nombreCompleto | Nombre real del empleado | Varchar(150) | Obligatorio | | rol | Rol (Administrador, Recepción, Médico, Enfermería) | Varchar(20) | Obligatorio | | activo | Si el usuario puede acceder (1=Si, 0=No) | Boolean | Obligatorio, Default=1 | **Tabla: MEDICO** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idMedico** | ID único del Médico | Entero | PK, Obligatorio | | idUsuario | ID del usuario asociado | Entero | FK (Usuario), Obligatorio | | nombreCompleto | Nombre del médico | Varchar(150) | Obligatorio | | especialidad | Especialidad principal | Varchar(100) | Opcional | | cedulaProfesional | Cédula profesional | Varchar(20) | Opcional | **Tabla: CITA** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idCita** | ID único de la Cita | Entero | PK, Obligatorio | | idPaciente | Paciente agendado | Entero | FK (Paciente), Obligatorio | | idMedico | Médico que atenderá | Entero | FK (Medico), Obligatorio | | idServicio | Servicio agendado | Entero | FK (Servicio), Obligatorio | | fechaHoraInicio | Fecha y hora de inicio | Timestamp | Obligatorio | | fechaHoraFin | Fecha y hora de fin | Timestamp | Obligatorio | | estadoCita | Estatus (Programada, Confirmada, Atendida, etc.) | Varchar(20) | Obligatorio, Default='Programada' | | notasRecepcion | Comentarios (ej. lista espera) | Text | Opcional | **Tabla: CONSULTA_ECE** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idConsulta** | ID único de la Consulta Médica | Entero | PK, Obligatorio | | idCita | Cita asociada | Entero | FK (Cita), Obligatorio, Único | | idPaciente | Paciente atendido | Entero | FK (Paciente), Obligatorio | | idMedico | Médico que atendió | Entero | FK (Medico), Obligatorio | | triageSignosVitales | Registro de enfermería | Text (o JSON) | Opcional | | notaEvolucion | Notas del médico | Text | Obligatorio al cierre | | diagnostico | Diagnóstico de la consulta | Text | Opcional | | tratamientoIndicado | Receta o indicaciones | Text | Opcional | | ordenEstudios | Indicaciones para estudios | Text | Opcional | **Tabla: PAGO** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idPago** | ID único del Pago | Entero | PK, Obligatorio | | idCita | Cita que se paga | Entero | FK (Cita), Opcional | | idPaciente | Paciente que paga | Entero | FK (Paciente), Obligatorio | | idUsuarioRecepcion | Usuario que registra (Caja) | Entero | FK (Usuario), Obligatorio | | monto | Cantidad pagada | Decimal(10, 2) | Obligatorio | | metodoPago | (Efectivo, Tarjeta, etc.) | Varchar(20) | Obligatorio | | fechaHoraPago | Momento del pago | Timestamp | Obligatorio | | referencia | (ej. 4 dígitos tarjeta, ID trans.) | Varchar(50) | Opcional |0"
                 alt="Foto 6 del congreso"
                 style="
@@ -462,7 +462,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_27.jpeg"
+                src="resources/foto_segundo_congreso_27.jpeg"
                 class="d-block w-100"
                 alt="Foto 7 del congreso"
                 style="
@@ -475,7 +475,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_28.jpeg"
+                src="resources/foto_segundo_congreso_28.jpeg"
                 class="d-block w-100"
                 alt="Foto 8 del congreso"
                 style="
@@ -488,7 +488,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_31.jpeg"
+                src="resources/foto_segundo_congreso_31.jpeg"
                 class="d-block w-100"
                 alt="Foto 9 del congreso"
                 style="
@@ -501,7 +501,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_33.jpeg"
+                src="resources/foto_segundo_congreso_33.jpeg"
                 class="d-block w-100"
                 alt="Foto 10 del congreso"
                 style="
@@ -514,7 +514,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_35.jpeg"
+                src="resources/foto_segundo_congreso_35.jpeg"
                 class="d-block w-100"
                 alt="Foto 11 del congreso"
                 style="
@@ -527,7 +527,7 @@
 
             <div class="carousel-item">
               <img
-                src="/resources/foto_segundo_congreso_38.jpeg"
+                src="resources/foto_segundo_congreso_38.jpeg"
                 class="d-block w-100"
                 alt="Foto 12 del congreso"
                 style="
