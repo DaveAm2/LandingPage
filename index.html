@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Hardware - Consolas Retro y PC Gaming en León Gto.</title>
+    <link rel="icon" href="data:image/svg+xml,
+        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+            <rect x='5' y='15' width='90' height='55' rx='5' fill='%2306b6d4'/>
+            <rect x='8' y='18' width='84' height='49' fill='%23111827'/>
+            <path d='M35 70 H65 V80 H35 Z' fill='%2306b6d4'/>
+            <path d='M45 80 H55 V90 H45 Z' fill='%2306b6d4'/>
+            <circle cx='75' cy='50' r='6' fill='%23f43f5e'/>
+            <rect x='73' y='35' width='4' height='15' fill='%23e5e7eb'/>
+            <path d='M65 56 H85 V62 H65 Z' fill='%23374151'/>
+        </svg>
+    ">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1920x1080/1a202c/ffffff?text=PC+Gaming+y+Retro');
+            background-size: cover;
+            background-position: center;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-cyan-400">Dave's Hardware</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#retro" class="hover:text-cyan-400 transition-colors">Consolas Retro</a>
+                <a href="#pc-gaming" class="hover:text-cyan-400 transition-colors">PC Gaming</a>
+                <a href="#testimonios" class="hover:text-cyan-400 transition-colors">Opiniones</a>
+                <a href="#contacto" class="hover:text-cyan-400 transition-colors">Contacto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#retro" class="block hover:text-cyan-400 transition-colors">Consolas Retro</a>
+            <a href="#pc-gaming" class="block hover:text-cyan-400 transition-colors">PC Gaming</a>
+            <a href="#testimonios" class="block hover:text-cyan-400 transition-colors">Opiniones</a>
+            <a href="#contacto" class="block hover:text-cyan-400 transition-colors">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-bg py-24 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-wider leading-tight">
+                    <span class="text-cyan-400">Consolas Retro-Emuladoras</span> Únicas en León Gto.
+                </h2>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-300">
+                    Revive miles de clásicos y construye la PC de tus sueños con los únicos especialistas en gaming de León.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#retro" class="cta-button bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold py-3 px-8 rounded-lg text-lg">
+                        ¡VER CONSOLAS RETRO!
+                    </a>
+                    <a href="#pc-gaming" class="cta-button bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg text-lg">
+                        COTIZAR PC PERSONALIZADA
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Retro Consoles Section -->
+        <section id="retro" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold text-cyan-400">El Paraíso Retro de León está Aquí</h3>
+                    <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Somos los únicos en León, Gto. especializados en consolas retro-emuladoras. Listas para jugar con miles de títulos.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=Consola+Portátil" alt="Consola Retro Portátil" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold text-white">Arcade Portátil X-1</h4>
+                            <p class="text-cyan-400 font-semibold mt-1">15,000+ Juegos Incluidos</p>
+                            <p class="text-gray-400 mt-2">Lleva la nostalgia a donde quieras. Pantalla de 5", batería de larga duración y compatible con TV.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <span class="text-3xl font-bold text-white">$1,899 MXN</span>
+                                <button class="bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold py-2 px-4 rounded-md">COMPRAR AHORA</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=Consola+de+Sobremesa" alt="Consola Retro de Sobremesa" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold text-white">Retro Station Pro</h4>
+                            <p class="text-cyan-400 font-semibold mt-1">30,000+ Juegos Incluidos</p>
+                            <p class="text-gray-400 mt-2">Conecta a tu TV 4K y disfruta de los clásicos. Incluye 2 controles inalámbricos tipo PS.</p>
+                             <div class="mt-4 flex justify-between items-center">
+                                <span class="text-3xl font-bold text-white">$2,499 MXN</span>
+                                <button class="bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold py-2 px-4 rounded-md">COMPRAR AHORA</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/2d3748/e2e8f0?text=Bartop+Arcade" alt="Máquina Arcade Bartop" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h4 class="text-2xl font-bold text-white">Arcade Bartop Clásico</h4>
+                            <p class="text-cyan-400 font-semibold mt-1">20,000+ Juegos Incluidos</p>
+                            <p class="text-gray-400 mt-2">La experiencia arcade definitiva en casa. Palancas y botones de alta calidad para 2 jugadores.</p>
+                             <div class="mt-4 flex justify-between items-center">
+                                <span class="text-3xl font-bold text-white">$6,999 MXN</span>
+                                <button class="bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold py-2 px-4 rounded-md">COMPRAR AHORA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom PC Gaming Section -->
+        <section id="pc-gaming" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold text-cyan-400">El Mejor PC Gaming Personalizado en León</h3>
+                    <p class="text-gray-400 mt-2 max-w-2xl mx-auto">Diseñamos y ensamblamos la computadora perfecta para ti. Rendimiento extremo, estética increíble.</p>
+                </div>
+                <!-- Gallery -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                    <img src="https://placehold.co/500x500/1a202c/e2e8f0?text=Build+1" alt="PC Gaming Personalizado 1" class="rounded-lg shadow-xl hover:opacity-80 transition-opacity">
+                    <img src="https://placehold.co/500x500/1a202c/e2e8f0?text=Build+2" alt="PC Gaming Personalizado 2" class="rounded-lg shadow-xl hover:opacity-80 transition-opacity">
+                    <img src="https://placehold.co/500x500/1a202c/e2e8f0?text=Build+3" alt="PC Gaming Personalizado 3" class="rounded-lg shadow-xl hover:opacity-80 transition-opacity">
+                    <img src="https://placehold.co/500x500/1a202c/e2e8f0?text=Build+4" alt="PC Gaming Personalizado 4" class="rounded-lg shadow-xl hover:opacity-80 transition-opacity">
+                </div>
+                <div class="text-center">
+                     <a href="#contacto" class="cta-button bg-cyan-500 hover:bg-cyan-400 text-gray-900 font-bold py-4 px-10 rounded-lg text-xl">
+                        COTIZAR MI PC A MEDIDA
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonios" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold">La Confianza de Nuestros Clientes</h3>
+                    <p class="text-gray-400 mt-2">Gamers y entusiastas de León nos recomiendan.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <p class="text-gray-300">"¡Increíble la consola retro! Funciona de maravilla y el catálogo de juegos es inmenso. La mejor compra para revivir mi infancia. 100% recomendado."</p>
+                        <p class="font-bold text-cyan-400 mt-4">- Carlos R.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <p class="text-gray-300">"Me armaron una PC bestial para streaming y gaming. El manejo de cables es impecable y el rendimiento es superior a lo que esperaba. Gran atención en León."</p>
+                        <p class="font-bold text-cyan-400 mt-4">- Sofia M.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold">Preguntas Frecuentes</h3>
+                    <p class="text-gray-400 mt-2">Resolvemos tus dudas para que compres con total confianza.</p>
+                </div>
+                <div class="space-y-4" x-data="{ open: 0 }">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-gray-800 rounded-lg">
+                        <button @click="open = (open === 1 ? 0 : 1)" class="w-full flex justify-between items-center text-left p-4 font-semibold">
+                            <span>¿Qué garantía tienen los productos?</span>
+                            <svg class="w-5 h-5 transition-transform" :class="{'rotate-180': open === 1}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="open === 1" x-collapse class="p-4 pt-0 text-gray-300">
+                            Ofrecemos 1 año de garantía en todos nuestros ensambles de PC contra defectos de fabricación y 6 meses en consolas retro. El soporte técnico es directo con nosotros en León.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-gray-800 rounded-lg">
+                        <button @click="open = (open === 2 ? 0 : 2)" class="w-full flex justify-between items-center text-left p-4 font-semibold">
+                             <span>¿Qué métodos de pago aceptan?</span>
+                             <svg class="w-5 h-5 transition-transform" :class="{'rotate-180': open === 2}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="open === 2" x-collapse class="p-4 pt-0 text-gray-300">
+                           Aceptamos tarjetas de crédito/débito, transferencia bancaria, Mercado Pago y pago en efectivo directamente en nuestra tienda en León.
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-gray-800 rounded-lg">
+                        <button @click="open = (open === 3 ? 0 : 3)" class="w-full flex justify-between items-center text-left p-4 font-semibold">
+                            <span>¿Hacen envíos a otras partes de México?</span>
+                            <svg class="w-5 h-5 transition-transform" :class="{'rotate-180': open === 3}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div x-show="open === 3" x-collapse class="p-4 pt-0 text-gray-300">
+                            Sí, realizamos envíos a todo México a través de paqueterías seguras. Para clientes en León, Guanajuato, ofrecemos entrega local o recolección en tienda.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact and Location Section -->
+        <section id="contacto" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h3 class="text-4xl font-bold text-cyan-400">Visítanos o Contáctanos</h3>
+                    <p class="text-gray-400 mt-2">Estamos en León para ayudarte con tu proyecto de gaming.</p>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Map and Address -->
+                    <div class="lg:w-1/2">
+                        <div class="bg-gray-900 rounded-lg overflow-hidden h-96">
+                            <!-- In a real scenario, you would embed a Google Map here -->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.688825103417!2d-101.6420556855913!3d21.12555598594611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf3f0737a067%3A0x6b61726a9117a56c!2sPlaza%20Punto%20Escobedo!5e0!3m2!1ses-419!2smx!4v1678886400000!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="mt-4 bg-gray-900 p-4 rounded-lg">
+                             <p class="font-bold">Dirección:</p>
+                             <p class="text-gray-300">Plaza Punto Escobedo, Blvd. Mariano Escobedo Oriente esq. Av. Pradera, León, Guanajuato.</p>
+                        </div>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="lg:w-1/2 flex flex-col justify-center">
+                        <div class="bg-gray-900 p-8 rounded-lg">
+                            <h4 class="text-2xl font-bold mb-4">Información de Contacto</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-4">
+                                    <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    <a href="tel:+524770000000" class="text-lg hover:text-cyan-400">+52 (477) 000-0000</a>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                     <svg class="w-6 h-6 text-cyan-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.333 4.903a4.759 4.759 0 00-6.732 0l-.863.86-.862-.86a4.759 4.759 0 00-6.732 0 4.759 4.759 0 000 6.73l.862.862 6.732 6.732 6.732-6.732.862-.862a4.758 4.758 0 000-6.73zm-1.414 5.316l-6.182 6.182-6.182-6.182a3.26 3.26 0 010-4.608l.862-.862a3.26 3.26 0 014.608 0l.862.862.862.862 1.447-1.447-.862-.862a3.26 3.26 0 010-4.608 3.26 3.26 0 014.608 0l.862.862a3.26 3.26 0 010 4.608z" clip-rule="evenodd" fill-rule="evenodd" transform="translate(-1.05 -1.52) scale(0.8)"/> <!-- WhatsApp SVG icon -->
+                                    <a href="https://wa.me/524770000000" target="_blank" class="text-lg hover:text-cyan-400">WhatsApp: (477) 000-0000</a>
+                                </div>
+                            </div>
+                            <p class="mt-6 text-gray-400">¡Mándanos un mensaje para cotizaciones o dudas! Estamos para servirte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-700 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Dave's Hardware. Todos los derechos reservados.</p>
+            <p class="text-sm">Especialistas en PC Gaming y Consolas Retro en León, Guanajuato.</p>
+        </div>
+    </footer>
+    
+    <!-- Botón para volver al inicio -->
+    <button id="scrollToTopBtn" title="Volver al inicio" class="fixed bottom-5 right-5 z-50 bg-cyan-500 hover:bg-cyan-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-cyan-400">
+        <!-- Icono de PC y Joystick -->
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5">
+            <path d="M7 15.5C8.38071 15.5 9.5 14.3807 9.5 13C9.5 11.6193 8.38071 10.5 7 10.5C5.61929 10.5 4.5 11.6193 4.5 13C4.5 14.3807 5.61929 15.5 7 15.5Z" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 10.5V6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 17.5H10C10.5523 17.5 11 17.0523 11 16.5V15.5H3V16.5C3 17.0523 3.44772 17.5 4 17.5Z" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 6.5H21C21.5523 6.5 22 6.94772 22 7.5V16.5C22 17.0523 21.5523 17.5 21 17.5H14C13.4477 17.5 13 17.0523 13 16.5V7.5C13 6.94772 13.4477 6.5 14 6.5Z" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 17.5V19.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.5 21.5H19.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Lógica del botón para volver al inicio
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+</html>
+

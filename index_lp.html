@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Congreso de Ingenierías 2025</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"
+          >5° Congreso de Ingenierías UDL</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mainMenu"
+          aria-controls="mainMenu"
+          aria-label="Abrir menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mainMenu">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menú</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#charlas">Conferencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#talleres">Talleres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Programa">Programa</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#registro">Registro</a>
+              </li>
+            </ul>
+            <div class="ms-lg-3 mt-3 mt-lg-0 d-flex gap-2">
+              <button id="toggleTheme" class="btn btn-outline-secondary btn-sm">
+                Modo oscuro
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section id="hero" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-6">
+            <h1 class="display-5 fw-bold">
+              Conectando Inteligencia Diseño y Colaboración
+            </h1>
+            <p class="lead">
+              Conferencias, talleres y networking para todas las ingenierías de
+              la Universidad de León.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#registro" class="btn btn-primary">Regístrate</a>
+              <a href="#charlas" class="btn btn-outline-primary"
+                >Ver conferencias</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <img
+              src="/resources/foto_segundo_congreso_37.jpeg"
+              class="img-fluid rounded shadow"
+              alt="Ilustración del congreso de ingenierías"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="charlas" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">
+          Conferencias<span class="badge text-bg-success">Nuevo</span>
+        </h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="/resources/colin.jpeg"
+                class="card-img-top"
+                alt="Portada conferencia 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">IA Industrial Cibersegura</h5>
+                <p class="card-text">
+                  Cybersecurity Leader (America´s) SIEMENS.
+                </p>
+                <span class="badge text-bg-success">1a Conferencia</span>
+              </div>
+              <div class="card-footer bg-transparent">
+                <button
+                  class="btn btn-sm btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCharla"
+                >
+                  Más info
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="/resources/coxca.jpeg"
+                class="card-img-top"
+                alt="Portada conferencia 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Inspekto: Inteligencia Artificial con ADN Industria
+                </h5>
+                <p class="card-text">Factory Automation SIEMENS</p>
+                <span class="badge text-bg-warning">2a Conferencia</span>
+              </div>
+              <div class="card-footer bg-transparent">
+                <button
+                  class="btn btn-sm btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCharla"
+                >
+                  Más info
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+              <img
+                src="/resources/sanchez.jpeg"
+                class="card-img-top"
+                alt="Portada conferencia 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Robots Colaborativos</h5>
+                <p class="card-text">
+                  Project Manager Comercial Robótica León GUREGO
+                </p>
+                <span class="badge text-bg-danger">3a Conferencia</span>
+              </div>
+              <div class="card-footer bg-transparent">
+                <button
+                  class="btn btn-sm btn-outline-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalCharla"
+                >
+                  Más info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Programa" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Programa</h2>
+
+        <div class="accordion" id="ProgramaAcc">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panel-general"
+                aria-expanded="true"
+              >
+                Programa General
+              </button>
+            </h2>
+            <div
+              id="panel-general"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#ProgramaAcc"
+            >
+              <div class="accordion-body p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">7:00 - 7:30</span> Registro
+                    <span class="badge text-bg-secondary">Lobby</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">7:45 - 8:00</span> Inauguración
+                    <span class="badge text-bg-success">Salón A</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panel-conferencias"
+                aria-expanded="false"
+              >
+                Conferencias
+              </button>
+            </h2>
+            <div
+              id="panel-conferencias"
+              class="accordion-collapse collapse"
+              data-bs-parent="#ProgramaAcc"
+            >
+              <div class="accordion-body p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">8:00 - 8:45</span> Conferencia I
+                    <span class="badge text-bg-info">Salón A</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">9:00 - 9:30</span> Desayuno
+                    <span class="badge text-bg-secondary">Salón A</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">9:45 - 10:30</span> Conferencia 2
+                    <span class="badge text-bg-info">Salón A</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">10:45 - 11:30</span> Conferencia 3
+                    <span class="badge text-bg-info">Salón A</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">11:45 - 12:15</span> Receso
+                    <span class="badge text-bg-secondary">Lobby</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panel-talleres"
+                aria-expanded="false"
+              >
+                Talleres y Clausura
+              </button>
+            </h2>
+            <div
+              id="panel-talleres"
+              class="accordion-collapse collapse"
+              data-bs-parent="#ProgramaAcc"
+            >
+              <div class="accordion-body p-0">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <div class="d-flex justify-content-between">
+                      <span class="fw-bold">12:15 - 14:00</span>
+                      <span class="badge text-bg-info">Salón B</span>
+                    </div>
+                    <span class="d-block mt-2 fw-bold"
+                      >Talleres Simultáneos:</span
+                    >
+                    <ul class="list-unstyled ps-3 pt-1 mb-0">
+                      <li>- Simulación con SolidWorks</li>
+                      <li>- Ciencia de Datos</li>
+                      <li>- Una Introducción a las Neuronas Artificiales</li>
+                      <li>- Manufactura Aditiva</li>
+                    </ul>
+                  </li>
+
+                  <li class="list-group-item d-flex justify-content-between">
+                    <span class="fw-bold">14:00 - 14:30</span> Clausura, Rifa y
+                    Toma de Fotografía
+                    <span class="badge text-bg-danger">Salón A</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="talleres" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Talleres</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/resources/martinez.jpeg"
+                class="card-img-top"
+                alt="Foto Ponente Hugo Martínez"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Hugo Martínez Zepeda
+                  <span class="badge text-bg-success">VIAS 3D</span>
+                </h5>
+                <p class="card-text">
+                  CRE Aplication Engineer Mexico & Latam - Taller: Simulación
+                  con SolidWorks.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/resources/macias.jpeg"
+                class="card-img-top"
+                alt="Foto Ponente Ricardo Macías"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Dr. Ricardo Macías Jamaica
+                  <span class="badge text-bg-success">TECNM Campus Celaya</span>
+                </h5>
+                <p class="card-text">
+                  Departamento de Ingeniería Química - Taller: Ciencia de Datos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/resources/ferro.jpeg"
+                class="card-img-top"
+                alt="Foto Ponente Rodolfo Ferro"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ing. Rodolfo Ferro
+                  <span class="badge text-bg-success">GameCoder Studios</span>
+                </h5>
+                <p class="card-text">
+                  Desarrollador de Inteligencia Artificial y Block Chain -
+                  Taller: Una Introducción a las Neuronas Artificiales.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/resources/alvarez.jpeg"
+                class="card-img-top"
+                alt="Foto Ponente D"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ing. José Emmanuel Álvarez Camarena
+                  <span class="badge text-bg-success">Flecha Amarilla</span>
+                </h5>
+                <p class="card-text">
+                  Ingeniero de Proyecto Tecnología a Bordo - Taller: Manufactura
+                  Aditiva.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Galería (Eventos Anteriores)</h2>
+
+        <div
+          id="galeria"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+              <img
+                src="/resources/foto_segundo_congreso_24.jpeg"
+                class="d-block w-100"
+                alt="Foto 1 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_20.jpeg"
+                class="d-block w-100"
+                alt="Foto 2 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_13.jpeg"
+                class="d-block w-100"
+                alt="Foto 4 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_21.jpeg"
+                class="d-block w-100"
+                alt="Foto 5 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_23.jpeg"
+                class="d-block w-1D (Completo).docx: La Clínica MED necesita un sistema de escritorio (Python/Flet + Django/PostgreSQL) para gestionar su operación. **Requisitos Funcionales:** 1. **Administración:** Gestión de usuarios (Admin, Recepción, Médico, Enfermería), catálogos de servicios, precios y horarios médicos. Generación de reportes de ingresos y caja. 2. **Recepción:** Agenda multicalendario (filtrable por médico/especialidad), registro de pacientes (datos personales y de emergencia), gestión de citas (programada, confirmada, cancelada, etc.), reprogramación, lista de espera, y cobro en caja (efectivo, tarjeta) con emisión de recibos. 3. **Médico (ECE):** Acceso al Expediente Clínico Electrónico (ECE), consulta de historial, registro de notas de evolución/alta, visualización de alergias/crónicos, generación de recetas, órdenes de estudios y adjuntar documentos. 4. **Enfermería:** Registro de triage (signos vitales) y notas de enfermería, consulta de indicaciones médicas. **Requisitos No Funcionales:** * Interfaz intuitiva, arquitectura de escritorio local conectada a servidor central (red interna), seguridad por roles (login), y confidencialidad de datos. --- ### 2. Diccionario de Datos **Tabla: PACIENTE** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idPaciente** | ID único del Paciente | Entero | PK, Obligatorio | | nombre | Nombre(s) | Varchar(100) | Obligatorio | | apellidoPaterno | Apellido Paterno | Varchar(50) | Obligatorio | | apellidoMaterno | Apellido Materno | Varchar(50) | Opcional | | fechaNacimiento | Fecha de nacimiento | Date | Obligatorio | | genero | Sexo (Masculino, Femenino, Otro) | Varchar(15) | Opcional | | telefonoContacto | Teléfono principal | Varchar(15) | Obligatorio | | contactoEmergenciaNombre | Nombre de contacto de emergencia | Varchar(150) | Opcional | | contactoEmergenciaTelefono | Teléfono de contacto de emergencia | Varchar(15) | Opcional | | alergiasConocidas | Descripción de alergias | Text | Opcional | | padecimientosCronicos | Descripción de padecimientos crónicos | Text | Opcional | **Tabla: USUARIO** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idUsuario** | ID único del Usuario | Entero | PK, Obligatorio | | nombreUsuario | Alias para login | Varchar(30) | Obligatorio, Único | | contrasenaHash | Contraseña cifrada | Varchar(128) | Obligatorio | | nombreCompleto | Nombre real del empleado | Varchar(150) | Obligatorio | | rol | Rol (Administrador, Recepción, Médico, Enfermería) | Varchar(20) | Obligatorio | | activo | Si el usuario puede acceder (1=Si, 0=No) | Boolean | Obligatorio, Default=1 | **Tabla: MEDICO** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idMedico** | ID único del Médico | Entero | PK, Obligatorio | | idUsuario | ID del usuario asociado | Entero | FK (Usuario), Obligatorio | | nombreCompleto | Nombre del médico | Varchar(150) | Obligatorio | | especialidad | Especialidad principal | Varchar(100) | Opcional | | cedulaProfesional | Cédula profesional | Varchar(20) | Opcional | **Tabla: CITA** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idCita** | ID único de la Cita | Entero | PK, Obligatorio | | idPaciente | Paciente agendado | Entero | FK (Paciente), Obligatorio | | idMedico | Médico que atenderá | Entero | FK (Medico), Obligatorio | | idServicio | Servicio agendado | Entero | FK (Servicio), Obligatorio | | fechaHoraInicio | Fecha y hora de inicio | Timestamp | Obligatorio | | fechaHoraFin | Fecha y hora de fin | Timestamp | Obligatorio | | estadoCita | Estatus (Programada, Confirmada, Atendida, etc.) | Varchar(20) | Obligatorio, Default='Programada' | | notasRecepcion | Comentarios (ej. lista espera) | Text | Opcional | **Tabla: CONSULTA_ECE** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idConsulta** | ID único de la Consulta Médica | Entero | PK, Obligatorio | | idCita | Cita asociada | Entero | FK (Cita), Obligatorio, Único | | idPaciente | Paciente atendido | Entero | FK (Paciente), Obligatorio | | idMedico | Médico que atendió | Entero | FK (Medico), Obligatorio | | triageSignosVitales | Registro de enfermería | Text (o JSON) | Opcional | | notaEvolucion | Notas del médico | Text | Obligatorio al cierre | | diagnostico | Diagnóstico de la consulta | Text | Opcional | | tratamientoIndicado | Receta o indicaciones | Text | Opcional | | ordenEstudios | Indicaciones para estudios | Text | Opcional | **Tabla: PAGO** | Campo | Descripción | Tipo | Validación | | :--- | :--- | :--- | :--- | | **@idPago** | ID único del Pago | Entero | PK, Obligatorio | | idCita | Cita que se paga | Entero | FK (Cita), Opcional | | idPaciente | Paciente que paga | Entero | FK (Paciente), Obligatorio | | idUsuarioRecepcion | Usuario que registra (Caja) | Entero | FK (Usuario), Obligatorio | | monto | Cantidad pagada | Decimal(10, 2) | Obligatorio | | metodoPago | (Efectivo, Tarjeta, etc.) | Varchar(20) | Obligatorio | | fechaHoraPago | Momento del pago | Timestamp | Obligatorio | | referencia | (ej. 4 dígitos tarjeta, ID trans.) | Varchar(50) | Opcional |0"
+                alt="Foto 6 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_27.jpeg"
+                class="d-block w-100"
+                alt="Foto 7 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_28.jpeg"
+                class="d-block w-100"
+                alt="Foto 8 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_31.jpeg"
+                class="d-block w-100"
+                alt="Foto 9 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_33.jpeg"
+                class="d-block w-100"
+                alt="Foto 10 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_35.jpeg"
+                class="d-block w-100"
+                alt="Foto 11 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="/resources/foto_segundo_congreso_38.jpeg"
+                class="d-block w-100"
+                alt="Foto 12 del congreso"
+                style="
+                  height: 400px;
+                  object-fit: cover;
+                  object-position: center;
+                "
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#galeria"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span
+            ><span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#galeria"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span
+            ><span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Preguntas Frecuentes (FAQ)</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+                aria-expanded="true"
+              >
+                ¿El congreso tiene costo?
+              </button>
+            </h2>
+            <div
+              id="faq1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                R: Sí, para asistir se debe cubrir una cuota de recuperación de
+                $850 MXN. El pago debe realizarse con los directores de facultad
+                de la Universidad de León. Es indispensable pagar con al menos
+                15 días de anticipación a la fecha del evento para poder recibir
+                tu pase de acceso, <strong>sin excepción.</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+              >
+                ¿Necesito registrarme para los talleres?
+              </button>
+            </h2>
+            <div
+              id="faq2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sí, aunque las conferencias son de acceso libre (previo
+                registro), los talleres tienen cupo limitado. Al momento de
+                liquidar el costo del pase de acceso, podrá registrase con los
+                directores de facultad a los talleres aún disponibles.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+              >
+                ¿Habrá constancia de participación?
+              </button>
+            </h2>
+            <div
+              id="faq3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sí, se entregará una constancia física a todos los asistentes
+                que cumplan con el <strong>80%</strong> de asistencia a las
+                conferencias magistrales al terminar el evento.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="registro" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Registro al Congreso</h2>
+        <p>Asegura tu lugar. ¡Cupo limitado!</p>
+
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-6">
+            <label for="regNombre" class="form-label">Nombre(s)</label>
+            <input type="text" class="form-control" id="regNombre" required />
+            <div class="invalid-feedback">Ingresa tu nombre.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="regEmail" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="regEmail" required />
+            <div class="invalid-feedback">Ingresa un correo válido.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="regCarrera" class="form-label">Ingeniería</label>
+            <select class="form-select" id="regCarrera" required>
+              <option value="" selected disabled>
+                Selecciona tu ingeniería...
+              </option>
+              <option value="civil">Ing. Civil</option>
+              <option value="mecatronica">
+                Ing. Electromecánica Industrial
+              </option>
+              <option value="industrial">Ing. Mecatrónica</option>
+              <option value="sistemas">Ing. en Computación</option>
+              <option value="otra">Otra</option>
+            </select>
+            <div class="invalid-feedback">Selecciona tu carrera.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="regPlantel" class="form-label">Plantel</label>
+            <select class="form-select" id="regPlantel" required>
+              <option value="" selected disabled>
+                Selecciona tu plantel...
+              </option>
+              <option value="leon">León</option>
+              <option value="irapuato">Irapuato</option>
+              <option value="celaya">Celaya</option>
+              <option value="externo">Externo</option>
+            </select>
+            <div class="invalid-feedback">Selecciona tu plantel.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck">
+                Acepto los términos y condiciones.
+              </label>
+              <div class="invalid-feedback">Debes aceptar los términos.</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-success btn-lg" type="submit">
+              Enviar Registro
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="py-4 bg-body-tertiary">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+      >
+        <nav aria-label="breadcrumb" class="mb-2 mb-md-0">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#hero">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#Programa">Programa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Registro</li>
+          </ol>
+        </nav>
+        <small class="text-muted">© 2025 Congreso de Ingenierías UDL</small>
+      </div>
+    </footer>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="toastOk"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Registro</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="toast-body">¡Registro enviado con éxito!</div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalCharla" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Detalles de la Conferencia</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Aquí se cargaría dinámicamente la información de la conferencia
+              seleccionada.
+            </p>
+            <p><strong>Ponente:</strong> Dr. Asignado</p>
+            <p>
+              <strong>Resumen:</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed
+              erat molestie vehicula.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">
+              Entendido
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // IIFE (Función autoejecutable)
+        (() => {
+          "use strict";
+
+          // Selecciona el formulario
+          const form = document.querySelector(".needs-validation");
+
+          // Selecciona el elemento HTML del toast (id="toastOk")
+          const toastEl = document.getElementById("toastOk");
+
+          // Crea la instancia del Toast de Bootstrap
+
+          const toast = toastEl ? new bootstrap.Toast(toastEl) : null;
+
+          // Agrega el listener para el evento 'submit' del formulario
+          form?.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            if (!form.checkValidity()) {
+              e.stopPropagation();
+            } else {
+              toast?.show(); // Muestra el toast
+              form.reset();
+              form.classList.remove("was-validated");
+              return;
+            }
+
+            form.classList.add("was-validated");
+          });
+
+          const btnTheme = document.getElementById("toggleTheme");
+          const htmlEl = document.documentElement;
+
+          btnTheme?.addEventListener("click", () => {
+            htmlEl.setAttribute(
+              "data-bs-theme",
+              htmlEl.getAttribute("data-bs-theme") === "light"
+                ? "dark"
+                : "light"
+            );
+
+            // Actualiza el texto del botón al hacer clic
+            const currentTheme = htmlEl.getAttribute("data-bs-theme");
+            if (btnTheme) {
+              btnTheme.textContent =
+                currentTheme === "dark" ? "Modo claro" : "Modo oscuro";
+            }
+          });
+
+          // Lógica para actualizar el texto del botón al cargar la página
+          const currentTheme = htmlEl.getAttribute("data-bs-theme");
+          if (btnTheme) {
+            btnTheme.textContent =
+              currentTheme === "dark" ? "Modo claro" : "Modo oscuro";
+          }
+        })();
+      });
+    </script>
+  </body>
+</html>
